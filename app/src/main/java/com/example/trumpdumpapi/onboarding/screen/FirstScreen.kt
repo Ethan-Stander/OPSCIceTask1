@@ -14,7 +14,7 @@ class FirstScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first_screen, container, false)
+        return inflater.inflate(R.layout.fragment_welcome, container, false)
     }
 
 }

@@ -1,13 +1,14 @@
 package com.example.trumpdumpapi
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Slpashscreen : AppCompatActivity() {
+class ActivitySplashScreen : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_slpashscreen)
-
+        setContentView(R.layout.activity_splashscreen)
         supportActionBar?.hide()
     }
 }
