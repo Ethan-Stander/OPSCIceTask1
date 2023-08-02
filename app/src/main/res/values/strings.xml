@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">Trump Dump</string>
-    <string name="first" translatable="false">Welcome to our App!!!Please type legible sentences(
-        We don't want to confuse Mr Trump, he's very slow.)</string>
+    <string name="first">Welcome to our App! Please type legible sentences( We do not want to confuse Mr Trump, he is very slow.)</string>
     <string name="second">To use our App, you just need to type into the allocated textbox, before hitting our search button.
-        By clicking the "Random" button, you can view jokes related to Mr. Trump at random view.
-    </string>
+        By clicking the "Random" button, you can view jokes related to Mr. Trump at random view.</string>
     <string name="third">Do not take anything too seriously. All images are satire.
     HAVE FUN!!!</string>
     <string name="welcome">HELLO!!!</string>
