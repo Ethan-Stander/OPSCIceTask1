@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".onboarding.screen.SecondScreen">
+   >
 
     <ImageView
         android:id="@+id/imgImage2"
