@@ -1,19 +1,37 @@
 package com.example.trumpdumpapi
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
 
+        //Navigation Drawer
+
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val imgMenu = findViewById<ImageView>(R.id.imgMenu)
+        val navView = findViewById<NavigationView>(R.id.nav_view)
+        navView.itemIconTintList = null
+        imgMenu.setOnClickListener{
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
+        //home page
         val button = findViewById<Button>(R.id.btnSearch)
 
         button.setOnClickListener()

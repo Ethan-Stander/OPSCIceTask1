@@ -3,11 +3,15 @@
     <string name="first">Welcome to our App! Please type legible sentences( We do not want to confuse Mr Trump, he is very slow.)</string>
     <string name="second">To use our App, you just need to type into the allocated textbox, before hitting our search button.
         By clicking the "Random" button, you can view jokes related to Mr. Trump at random view.</string>
-    <string name="third">Do not take anything too seriously. All images are satire.
-    HAVE FUN!!!</string>
-    <string name="welcome">HELLO!!!</string>
-    <string name="next">NEXT</string>
-    <string name="about">ABOUT US</string>
-    <string name="finaly">FINALLY</string>
-    <string name="finish">FINISH</string>
+    <string name="third">Do not take anything too seriously. All images are satire. HAVE FUN!</string>
+    <string name="forth">Please click ob the button, to view the list of options we have for you.
+    HAVE FUN!</string>
+    <string name="welcome">HELLO!</string>
+    <string name="next">Next</string>
+    <string name="about">About us</string>
+    <string name="finaly">Finally</string>
+    <string name="finish">Finish</string>
+    <string name="nav_button">Lastly</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
 </resources>

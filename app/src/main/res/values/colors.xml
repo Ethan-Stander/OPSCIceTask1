@@ -2,8 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="cream">#ffffc2</color>
-    <color name="brown">#827717</color>
-    <color name="yellow">#ffff00</color>
-    <color name="yolk">#A4EEC701</color>
+    <color name="brownish">#827717</color>
+    <color name="yolk">#eec701</color>
+    <color name="mustered">#ceb301</color>
+    <color name="mustered_brown">#ac7e04</color>
 </resources>
