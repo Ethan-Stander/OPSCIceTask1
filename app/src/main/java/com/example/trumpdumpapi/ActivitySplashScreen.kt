@@ -20,7 +20,7 @@ class ActivitySplashScreen : AppCompatActivity() {
 
         layout.setOnClickListener()
         {
-            val intent = Intent(this, WelcomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

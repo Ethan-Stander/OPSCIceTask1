@@ -26,6 +26,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ActivityAddJoke"
+            android:label="Add Joke">
+        </activity>
+
+        <activity
+            android:name=".ActivityRandomQuote"
+            android:label="Random Quote">
+        </activity>
+
+        <activity
+            android:name=".ActivityQuoteList"
+            android:label="Quotes List">
+        </activity>
+
+        <activity
+            android:name=".ActivityJokeList"
+            android:label="Jokes List">
+        </activity>
+
+
         <activity
             android:name=".WelcomeActivity"
             android:label="Fragment First Screen" />

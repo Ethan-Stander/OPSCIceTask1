@@ -1,80 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_addjoke"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brownish"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Your main content within a ScrollView -->
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/brownish">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="159dp"
-            android:layout_height="194dp"
-            android:layout_marginTop="16dp"
-            android:textColor="@color/white"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:srcCompat="@drawable/img" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/lblAddJoke"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="16dp"
-            android:text="Share Your Funniest Trump Joke Below!"
-            android:textSize="9pt"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <EditText
-            android:id="@+id/txtName"
-            android:layout_width="230dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="101dp"
-            android:ems="10"
-            android:hint="Enter your name (optional)"
-            android:inputType="text"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblAddJoke" />
+            <ImageView
+                android:id="@+id/imgAddJoke"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:src="@drawable/baseline_menu_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/txtAddJoke"
-            android:layout_width="233dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="101dp"
-            android:ems="10"
-            android:hint="Type A joke"
-            android:inputType="text"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="159dp"
+                android:layout_height="194dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/img" />
 
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Add Joke"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtAddJoke" />
+            <!-- TextView - Title -->
+            <TextView
+                android:id="@+id/lblAddJoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:text="Share Your Funniest Trump Joke Below!"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+            <!-- EditText - Name -->
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="230dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="101dp"
+                android:ems="10"
+                android:hint="Enter your name (optional)"
+                android:inputType="text"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblAddJoke" />
+
+            <!-- EditText - Joke -->
+            <EditText
+                android:id="@+id/txtAddJoke"
+                android:layout_width="233dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="101dp"
+                android:ems="10"
+                android:hint="Type A joke"
+                android:inputType="text"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+            <!-- Button - Add Joke -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add Joke"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddJoke" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/mustered_brown"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/yolk"
+        app:itemTextColor="@color/yolk"
+        app:menu="@menu/nav_activity"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

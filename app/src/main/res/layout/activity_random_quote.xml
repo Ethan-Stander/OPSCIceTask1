@@ -1,78 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_randomquote"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brownish">
+    tools:context=".WelcomeActivity">
 
+    <!-- Main content layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:background="@color/brownish"
+        tools:context=".WelcomeActivity">
 
-        <TextView
-            android:id="@+id/tvHeading"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:text="Welcome to the Random Quote Pop-up!"
-            android:textSize="9pt"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
-            android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/brownish">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🎉 Unleash the Wit 🎭"
-            android:textSize="8pt"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeading"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnRandomQuote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btnRandomQuote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Generate Random Quote"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp" />
+                <TextView
+                    android:id="@+id/tvHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="56dp"
+                    android:text="Welcome to the Random Quote Pop-up!"
+                    android:textSize="9pt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.718"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:background="#FF000000"
-            app:layout_constraintTop_toBottomOf="@+id/btnRandomQuote"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp" />
+                <ImageView
+                    android:id="@+id/imgMenuRandomQuote"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="3dp"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_menu_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvQuote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="quote display"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp" />
+                <Button
+                    android:id="@+id/btnRandomQuoteGuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:text="Generate Random Quote"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FF000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRandomQuote" />
+
+                <TextView
+                    android:id="@+id/tvQuote"
+                    android:layout_width="309dp"
+                    android:layout_height="244dp"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="129dp"
+                    android:text="quote display"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:verticalScrollbarPosition="right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRandomQuoteGuy" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Navigation View for the drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_activity" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

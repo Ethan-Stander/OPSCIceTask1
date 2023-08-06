@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "235369166930",
+    "firebase_url": "https://ice-task-1-93964-default-rtdb.firebaseio.com",
+    "project_id": "ice-task-1-93964",
+    "storage_bucket": "ice-task-1-93964.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235369166930:android:e8a61190d347824d2d878b",
+        "android_client_info": {
+          "package_name": "com.example.trumpdumpapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235369166930-26iifonb8k0gu2oj0uo7p04fbr3o1i2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXlk281LTdi0DIYAh4biqmTuUfNgdHd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235369166930-26iifonb8k0gu2oj0uo7p04fbr3o1i2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

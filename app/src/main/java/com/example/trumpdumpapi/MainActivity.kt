@@ -1,6 +1,7 @@
 package com.example.trumpdumpapi
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,13 +24,68 @@ class MainActivity : AppCompatActivity() {
 
         //Navigation Drawer
 
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layoutaboutus)
         val imgMenu = findViewById<ImageView>(R.id.imgMenu)
         val navView = findViewById<NavigationView>(R.id.nav_view)
         navView.itemIconTintList = null
         imgMenu.setOnClickListener{
             drawerLayout.openDrawer(GravityCompat.START)
         }
+
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_about -> {
+                    // Handle click for About item
+                    val intent = Intent(this, AcivityAboutUs::class.java)
+                    startActivity(intent)
+                    drawerLayout.closeDrawers()
+                    true
+                }
+
+
+
+                R.id.nav_welcome ->
+                {
+                    val intent = Intent(this, WelcomeActivity::class .java)
+                    startActivity(intent)
+
+                    true
+                }
+
+                R.id.nav_random ->
+                {
+                    val intent = Intent(this, ActivityRandomQuote::class.java )
+                    startActivity(intent)
+
+                    true
+                }
+
+                // Handle other navigation items as needed
+
+
+
+                R.id.nav_home ->
+                {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+
+                    true
+                }
+
+
+                R.id.nav_exit->
+                {
+                    finishAffinity()
+                    true
+
+                }
+
+
+
+                else -> false
+            }
+        }
+
 
         //home page
         val button = findViewById<Button>(R.id.btnSearch)

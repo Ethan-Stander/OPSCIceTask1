@@ -12,11 +12,6 @@ class ActivityMenuButton :AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val button = findViewById<Button>(R.id.btnNext)
-        button.setOnClickListener(
-            {
-                val intent = Intent(this,MainActivity::class.java)
-                startActivity(intent)
-            })
+
     }
 }
