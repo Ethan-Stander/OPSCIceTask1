@@ -3,7 +3,7 @@
     <style name="Base.Theme.TrumpDumpAPI" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/mustered_brown</item>
         <item name="colorPrimaryDark">@color/brownish</item>
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/yolk</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:navigationBarColor">@color/mustered_brown</item>
@@ -14,7 +14,7 @@
     <style name="Theme.MainActivity" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/mustered_brown</item>
         <item name="colorPrimaryDark">@color/brownish</item>
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/yolk</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:navigationBarColor">@color/mustered_brown</item>
